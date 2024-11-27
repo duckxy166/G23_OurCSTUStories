@@ -103,11 +103,13 @@ html {
 .hero h1 {
     font-size: 3rem;
     margin: 0;
+
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 /* Animation */
@@ -118,7 +120,9 @@ html {
 .hero-overlay {
     transition: transform 1s, opacity 1s;
 }
-
+#scroll-btn{
+    text-decoration: none;
+}
 header {
     text-align: center;
     margin: 20px 0;
