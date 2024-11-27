@@ -2,3 +2,32 @@
 margin: 0;
 padding: 0;
 }
+.hero {
+    position: relative;
+    height:  800px;/* ปรับขนาดของภาพใหญ่ */
+    background-image: url('resources/images.jpg'); /* แทน URL ด้วยภาพจริง */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 1); /* เพิ่มความมืดให้ภาพ */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
