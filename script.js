@@ -1,3 +1,10 @@
+//Nav bar
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+
+
 // เพิ่มแอนิเมชันให้ข้อความใน Hero Section
 document.addEventListener("DOMContentLoaded", () => {
     const heroTitle = document.getElementById("hero-title");
@@ -34,3 +41,5 @@ window.addEventListener("scroll", () => {
         heroSection.style.backgroundColor = "transparent";
     }
 });
+
+
