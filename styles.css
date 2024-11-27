@@ -4,8 +4,8 @@ padding: 0;
 }
 .hero {
     position: relative;
-    height:  800px;/* ปรับขนาดของภาพใหญ่ */
-    background-image: url('resources/images.jpg'); /* แทน URL ด้วยภาพจริง */
+    height:  700px;/* ปรับขนาดของภาพใหญ่ */
+    background-image: url('resources/Screenshot\ 2024-11-27\ 114424.png'); /* แทน URL ด้วยภาพจริง */
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -15,11 +15,12 @@ padding: 0;
 }
 
 .hero-overlay {
+    margin-top: 300px;
     text-align: center;
     color: white;
     background: rgba(0, 0, 0, 1); /* เพิ่มความมืดให้ภาพ */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .hero h1 {
@@ -46,11 +47,9 @@ header {
     margin: 20px 0;
 }
 .section-title {
-    background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline-block;
     padding: 10px 20px;
-    border-radius: 20px;
 }
 
 .content-container {
