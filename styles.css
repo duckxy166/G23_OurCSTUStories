@@ -82,7 +82,7 @@ html {
 .hero {
     position: relative;
     height:  700px;/* ปรับขนาดของภาพใหญ่ */
-    background-image: url('resources/Screenshot\ 2024-11-27\ 114424.png'); /* แทน URL ด้วยภาพจริง */
+    background-image: url('resources/Gray.png'); /* แทน URL ด้วยภาพจริง */
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -98,16 +98,19 @@ html {
     background: rgba(0, 0, 0, 1); /* เพิ่มความมืดให้ภาพ */
     padding: 20px;
     border-radius: 0px;
+    
 }
 
 .hero h1 {
     font-size: 3rem;
     margin: 0;
+
 }
 
 .hero p {
     font-size: 1.2rem;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 /* Animation */
@@ -118,7 +121,9 @@ html {
 .hero-overlay {
     transition: transform 1s, opacity 1s;
 }
-
+#scroll-btn{
+    text-decoration: none;
+}
 header {
     text-align: center;
     margin: 20px 0;
