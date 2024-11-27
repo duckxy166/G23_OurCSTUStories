@@ -56,8 +56,8 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 1500px;
+    margin: 50px auto;
 }
 
 .content-item {
@@ -67,7 +67,8 @@ header {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    height: 300px;
 }
 
 .content-item.reverse {
@@ -75,10 +76,10 @@ header {
 }
 
 .image-placeholder {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     background-color: #ccc;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .text-content h2 {
