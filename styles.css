@@ -45,3 +45,50 @@ header {
     text-align: center;
     margin: 20px 0;
 }
+.section-title {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.text-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
