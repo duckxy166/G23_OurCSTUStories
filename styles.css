@@ -124,6 +124,9 @@ html {
 }
 #scroll-btn{
     text-decoration: none;
+    color: white;
+    display: flex;
+    width:100%;
 }
 header {
     text-align: center;
