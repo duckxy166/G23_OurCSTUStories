@@ -233,12 +233,12 @@ header {
 }
 
 .text-content h2 {
-    margin: 0 0 10px 200px;
+    margin: 0 0 10px 000px;
     font-size: 18px;
 }
 
 .text-content p {
-    margin: 0 0 0px 200px;
+    margin: 0 0 0px 000px;
     font-size: 14px;
     color: #666;
 }
