@@ -214,3 +214,71 @@ header {
     width: 1100px;
     height: 100%;
 }
+
+/*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
+
+
+
+/* photo1 + ข้อความ */
+.regtangle1-text-container {
+    display: flex;
+    align-items: flex-start; /* จัดให้สี่เหลี่ยมและข้อความอยู่แนวนอน */
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* photo1 */
+.photo1 {
+    width: 650px; 
+    height: auto; 
+    flex-shrink: 0; 
+    border-radius: 0px; 
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 200px;
+}
+
+/* ข้อความ */
+.textparagraph2 {
+    margin-top: 50px;
+    margin-right: 150px;
+    text-align: justify;
+    line-height: 1.6; 
+    color: #333; 
+    font-size: 20px; 
+    margin-top: 200px;
+}
+
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.regtangle2-text-container {
+    display: flex;
+    flex-direction: row-reverse; /* ทำให้ regtangle2 อยู่ด้านขวา */
+    align-items: flex-start; /* จัดให้ข้อความอยู่ด้านซ้าย */
+    margin-top: 20px;
+}
+
+.photo2 {
+    flex-shrink: 0;
+    width: 600px;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 70px; 
+    margin-left: 100px; 
+    margin-right: 100px;
+}
+.textparagraph3 {
+    font-size: 25px;
+    color: #333;
+    padding-top: 50px;
+    margin: 0; 
+    white-space: pre-line; /* ให้ข้อความขึ้นบรรทัดใหม่เมื่อถึงขีดจำกัด */
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 80px; 
+    margin-bottom: 80px; 
+}
+
+
