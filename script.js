@@ -30,16 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
 });
 
-// Scroll Effect - เปลี่ยนสีพื้นหลังเมื่อเลื่อนลง
-window.addEventListener("scroll", () => {
-    const heroSection = document.querySelector(".hero");
-    const scrolled = window.scrollY;
+//animation
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
 
-    if (scrolled > 50) {
-        heroSection.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
-    } else {
-        heroSection.style.backgroundColor = "transparent";
-    }
-});
-
-
+function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(${-currentSlide * 100}%)`;
+}
