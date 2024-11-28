@@ -10,7 +10,7 @@ body {
 html {
     scroll-behavior: smooth;
   }
-
+/*Animation*/
 
 /*Navigator bar*/
 .navbar {
@@ -83,8 +83,8 @@ html {
 /*Journey*/
 .hero {
     position: relative;
-    height:  700px;/* ปรับขนาดของภาพใหญ่ */
-    background-image: url('resources/Gray.png'); /* แทน URL ด้วยภาพจริง */
+    height:  650px;/* ปรับขนาดของภาพใหญ่ */
+    background-image: url('resources/IMG_0189.jpg'); /* แทน URL ด้วยภาพจริง */
     width: 100%;
     background-size: cover;
     background-position: center;
