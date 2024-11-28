@@ -181,6 +181,10 @@ html {
     display: flex;
     width:100%;
 }
+#scroll-btn:hover {
+    background-color: #4c5451; /* Green */
+    color: white;
+  }
 header {
     text-align: center;
     margin: 20px 0;
@@ -246,14 +250,21 @@ header {
 .text-content2 h2 {
     margin: 0 0 10px 500px;
     font-size: 18px;
+    display: flex;
+    justify-content: end;
 }
 
 .text-content2 p {
     margin: 0 0 0px 500px;
     font-size: 14px;
     color: #666;
+    display: flex;
+    justify-content: end;
 }
-
+.end{
+    display: flex;
+    justify-content: end;
+}
 
 
 .inner_footer{
