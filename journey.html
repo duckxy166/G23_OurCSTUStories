@@ -18,23 +18,34 @@
         </div>
     </nav>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+
     <main>
-        <section class="hero">
-            <div class="hero-overlay">
-                <h1 id="hero-title">Our Journey Highlight</h1>
-                <p id="hero-subtitle">Discover our highlights and stories</p>
+        <section class="hero-slider">
+            <div class="slides">
+                <div class="slide" style="background-image: url('resources/IMG_0189.jpg');"></div>
+                <div class="slide" style="background-image: url('resources/IMG_0196.jpg');"></div>
+                <div class="slide" style="background-image: url('resources/IMG_0198.jpg');"></div>
             </div>
+        
+            <!-- ปุ่มนำทาง -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <a id="scroll-btn" href="#section-1">
+            <div class="hero-overlay">
+                <div>
+                    <h1 id="hero-title">Our Journey Highlight</h1>
+                    <p id="hero-subtitle">Discover our highlights and stories</p>
+                </div>
+            </div>
+        </a>
         </section>
+        
+        
         <header>
             <h1 class="section-title">Our Journey</h1>
         </header>
-        <section class="content-container">
+
+        <section id="section-1" class="content-container">
             <article class="content-item">
                 <figure class="image-placeholder"></figure>
                 <div class="text-content">
@@ -89,6 +100,13 @@
 </main>
 
 <script src="script.js"></script> 
+
+
+    <footer class ="footer">
+        <div class="inner_footer">
+            
+        </div>
+    </footer>
 
 </body>
 
