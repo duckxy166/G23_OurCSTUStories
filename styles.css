@@ -181,10 +181,8 @@ html {
     display: flex;
     width:100%;
 }
-#scroll-btn:hover {
-    background-color: #4c5451; /* Green */
-    color: white;
-  }
+
+
 header {
     text-align: center;
     margin: 20px 0;
@@ -273,6 +271,19 @@ header {
     width: 1100px;
     height: 100%;
 }
+/* ซ่อนเนื้อหาเริ่มต้น */
+.content-item {
+    opacity: 0;
+    transform: translateY(50px); 
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.content-item.show {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
 
 /*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
 
