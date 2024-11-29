@@ -323,7 +323,7 @@ display: flex;
     /* photo1 + ข้อความ */
     .regtangle1-text-container {
         display: flex;
-        align-items: flex-start; /* จัดให้สี่เหลี่ยมและข้อความอยู่แนวนอน */
+        align-items: flex-start; 
         margin-top: 20px;
         gap: 20px;
     }
@@ -352,8 +352,8 @@ display: flex;
     
     .regtangle2-text-container {
         display: flex;
-        flex-direction: row-reverse; /* ทำให้ regtangle2 อยู่ด้านขวา */
-        align-items: flex-start; /* จัดให้ข้อความอยู่ด้านซ้าย */
+        flex-direction: row-reverse; 
+        align-items: flex-start; 
         margin-top: 20px;
     }
     
@@ -372,7 +372,7 @@ display: flex;
         color: #333;
         padding-top: 50px;
         margin: 0; 
-        white-space: pre-line; /* ให้ข้อความขึ้นบรรทัดใหม่เมื่อถึงขีดจำกัด */
+        white-space: pre-line; 
         margin-left: 100px; 
         margin-right: 100px;
         margin-top: 80px; 
@@ -382,28 +382,34 @@ display: flex;
 
     
     @media (max-width: 1024px) {
-        /* สำหรับหน้าจอขนาดมือถือหรือหน้าจอกว้างน้อยกว่า 768px */
         .regtangle1-text-container, .regtangle2-text-container {
-            flex-direction: column; /* เปลี่ยนให้แสดงเป็นแนวตั้ง */
+            flex-direction: column; 
             align-items: center;
             gap: 15px;
         }
     
         .photo1, .photo2 {
-            width: 90%; /* เปลี่ยนขนาดให้พอดีกับหน้าจอ */
+            width: 90%; 
             margin-left: 0;
             margin-right: 0;
         }
     
         .textparagraph2, .textparagraph3 {
-            font-size: 18px; /* ลดขนาดตัวอักษร */
+            font-size: 18px; 
             margin-left: 20px;
             margin-right: 20px;
             margin-top: 20px;
         }
     }
     
-    
+    @media (max-width: 768px) {
+        .photo1, .photo2 {
+            width: 100%; 
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
     .footer{
         position:absolute;
         margin-top: auto;
