@@ -378,6 +378,38 @@ display: flex;
         margin-top: 80px; 
         margin-bottom: 80px; 
     }
+
+
+    
+    @media (max-width: 1024px) {
+        /* สำหรับหน้าจอขนาดมือถือหรือหน้าจอกว้างน้อยกว่า 768px */
+        .regtangle1-text-container, .regtangle2-text-container {
+            flex-direction: column; /* เปลี่ยนให้แสดงเป็นแนวตั้ง */
+            align-items: center;
+            gap: 15px;
+        }
+    
+        .photo1, .photo2 {
+            width: 90%; /* เปลี่ยนขนาดให้พอดีกับหน้าจอ */
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
+        .textparagraph2, .textparagraph3 {
+            font-size: 18px; /* ลดขนาดตัวอักษร */
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        /* สำหรับหน้าจอมือถือขนาดเล็ก (smartphone) หรือหน้าจอกว้างน้อยกว่า 480px */
+        .photo1, .photo2 {
+            width: 100%; /* ให้ภาพเต็มหน้าจอ */
+            margin-left: 0;
+            margin-right: 0;
+        }
     
     .footer{
         position:absolute;
