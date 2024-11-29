@@ -319,9 +319,7 @@ display: flex;
 
 
     /*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
-    
-    
-    
+
     /* photo1 + ข้อความ */
     .regtangle1-text-container {
         display: flex;
@@ -343,16 +341,12 @@ display: flex;
     
     /* ข้อความ */
     .textparagraph2 {
-        margin-top: 50px;
-        margin-right: 150px;
         text-align: justify;
-        line-height: 1.6; 
         color: #333; 
-        font-size: 20px; 
+        font-size: 22px; 
         margin-top: 80px;
+        font-family: Niramit;
     }
-    
-    
     
     /*---------------------------------------------------------------------------------------------------*/
     
@@ -372,8 +366,9 @@ display: flex;
         margin-left: 100px; 
         margin-right: 100px;
     }
+
     .textparagraph3 {
-        font-size: 25px;
+        font-size: 23px;
         color: #333;
         padding-top: 50px;
         margin: 0; 
