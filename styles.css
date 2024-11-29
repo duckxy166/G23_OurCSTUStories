@@ -403,13 +403,6 @@ display: flex;
         }
     }
     
-    @media (max-width: 768px) {
-        /* สำหรับหน้าจอมือถือขนาดเล็ก (smartphone) หรือหน้าจอกว้างน้อยกว่า 480px */
-        .photo1, .photo2 {
-            width: 100%; /* ให้ภาพเต็มหน้าจอ */
-            margin-left: 0;
-            margin-right: 0;
-        }
     
     .footer{
         position:absolute;
