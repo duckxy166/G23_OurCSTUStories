@@ -7,6 +7,7 @@ body {
     margin: 0;
     font-family: "Kanit", sans-serif;
     position: relative;
+    background-color: #1d1d1d;
 }
 
 html {
@@ -428,7 +429,7 @@ margin-left: auto;*/
 /* ข้อความ */
 .textparagraph2 {
     text-align: justify;
-    color: #333;
+    color: #ffffff;
     font-size: 22px;
     margin-top: 80px;
 
@@ -436,6 +437,7 @@ margin-left: auto;*/
 }
 
 .textparagraph2 .game {
+    
     font-size: large;
 }
 
@@ -444,19 +446,19 @@ margin-left: auto;*/
 }
 
 .textparagraph2 .fluke {
-    font-size: medium;
+    font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
 
 .textparagraph2 .can {
-    font-size: medium;
+    font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
 
 .textparagraph2 .june {
-    font-size: medium;
+    font-size: large ;
     padding-left: 10%;
     margin-bottom: 5%;
 }
