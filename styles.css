@@ -95,7 +95,10 @@ html {
 .Group{
     color:white;
     font-family: "Athiti", serif;
+    position: absolute;
     bottom: 10%;
+    padding-left: 80%;
+    font-size: 80px;
 }
 
 
@@ -439,6 +442,16 @@ margin-left: auto;*/
     font-family: "Athiti", sans-serif;
 }
 
+.textparagraph2 .future{
+    font-size: 100px;
+}
+
+.textparagraph2 .goal{
+    font-size: 30px;
+    text-align: center;
+}
+
+
 .textparagraph2 .game {
     
     width: auto;
@@ -486,11 +499,11 @@ margin-left: auto;*/
 .textparagraph2 .can {
     width: auto;
     height: auto;
-    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
-    backdrop-filter: blur(10px); /* ทำให้เบลอ */
-    border-radius: 15px; /* มุมโค้งมน */
-    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    background: rgb(17, 17, 17);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(5, 5, 5, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
     font-size: large;
     padding-left: 10%;
@@ -500,11 +513,11 @@ margin-left: auto;*/
 .textparagraph2 .june {
     width: auto;
     height: auto;
-    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
-    backdrop-filter: blur(10px); /* ทำให้เบลอ */
-    border-radius: 15px; /* มุมโค้งมน */
-    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    background: rgb(17, 17, 17);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(5, 5, 5, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
     font-size: large ;
     padding-left: 10%;
