@@ -1,463 +1,560 @@
 * {
     margin: 0;
     padding: 0;
-    }
-    body {
-        margin: 0;
-        font-family: "Kanit", sans-serif;
-        position: relative;
-    }
-    html {
-        scroll-behavior: smooth;
-        
-      }
-    /*Animation*/
-    
-    /*Navigator bar*/
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #050505;
-        padding: 10px 20px;
-    }
-    
-    .navbar a {
-        color: white;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
-    }
-    
-    .navbar a:hover {
-        background-color: #575757;
-        border-radius: 5px;
-    }
-    
-    .navbar .logo {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(255, 255, 255); 
-    }
-    
-    
-    .navbar .menu {
-        display: flex;
-    }
-    
-    @media (max-width: 768px) {
-        .navbar .menu {
-            flex-direction: column;
-            display: none;
-        }
-    
-        .navbar .menu.active {
-            display: flex;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-            background-color: #302f2f;
-        }
-    
-        .menu-toggle {
-            display: block;
-            cursor: pointer;
-            color: white;
-            font-size: 1.5em;
-        }
-    }
-    
-    @media (min-width: 769px) {
-        .menu-toggle {
-            display: none;
-        }
-    }
-    
-    
-    /*HOME*/
-    .regtangle-index-text-container {
-margin: 0;
-padding: 0;
-display: flex;
+}
 
-    }
-    .photo1-index {
-        margin-top: 100px;
-        height: auto;
-        width: 80%;
-    }
-    .h8{
-        display: flex;
-            justify-content: space-around;
-            flex-direction: column-reverse;
-            margin-left: 50px;
-    }
-    
-    
-    
-    
-    
-    /*Journey*/
-    .hero {
-        position: relative;
-        height:  650px;/* ปรับขนาดของภาพใหญ่ */
-        background-image: url('resources/IMG_0189.jpg'); /* แทน URL ด้วยภาพจริง */
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .hero-overlay {
-        margin-top: 300px;
-        text-align: center;
-        color: white;
-        background: rgba(0, 0, 0, 1); /* เพิ่มความมืดให้ภาพ */
-        padding: 20px;
-        border-radius: 0px;
-        
-    }
-    
-    
-    .hero-slider {
-        position: relative;
-        height: 650px;
-        overflow: hidden;
-    }
-    
-    .slides {
-        display: flex;
-        transition: transform 0.8s ease-in-out;
-        will-change: transform;
-    }
-    
-    .slide {
-        min-width: 100%;
-        height: 650px;
-        background-size: cover;
-        background-position: center;
-    }
-    
-    
-    .hero-overlay {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color: white;
-        z-index: 2;
-    }
-    
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        z-index: 3;
-    }
-    
-    .prev {
-        left: 20px;
-    }
-    
-    .next {
-        right: 20px;
-    }
-    
-    .prev:hover, .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    
-    .hero h1 {
-        font-size: 3rem;
-        margin: 0;
-    
-    }
-    
-    .hero p {
-        font-size: 1.2rem;
-        margin-top: 10px;
-        text-decoration: none;
-    }
-    
-    /* Animation */
-    .hero {
-        transition: background-color 0.5s ease;
-    }
-    
-    .hero-overlay {
-        transition: transform 1s, opacity 1s;
-    }
-    #scroll-btn{
-        text-decoration: none;
-        color: white;
-        display: flex;
-        width:100%;
-    }
-    
-    
-    header {
-        text-align: center;
-        margin: 20px 0;
-    }
-    .section-title {
-        color: rgb(0, 0, 0);
-        display: inline-block;
-        padding: 10px 20px;
-    }
-    
-    .content-container {
-        display: flex;
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+/*Animation*/
+
+/*Navigator bar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #050505;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar .menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .navbar .menu {
         flex-direction: column;
-        gap: 20px;
-        max-width: 1500px;
-        margin: 50px auto;
+        display: none;
     }
-    
+
+    .navbar .menu.active {
+        display: flex;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #302f2f;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
+/*HOME*/
+.regtangle-index-text-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.photo1-index {
+    margin-top: 100px;
+    height: auto;
+    width: 80%;
+}
+
+.h8 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    margin-left: 50px;
+}
+
+
+
+
+
+/*Journey*/
+.hero {
+    position: relative;
+    height: 650px;
+    /* ปรับขนาดของภาพใหญ่ */
+    background-image: url('resources/IMG_0189.jpg');
+    /* แทน URL ด้วยภาพจริง */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    margin-top: 300px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 1);
+    /* เพิ่มความมืดให้ภาพ */
+    padding: 20px;
+    border-radius: 0px;
+
+}
+
+
+.hero-slider {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    will-change: transform;
+}
+
+.slide {
+    min-width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+/* Animation */
+.hero {
+    transition: background-color 0.5s ease;
+}
+
+.hero-overlay {
+    transition: transform 1s, opacity 1s;
+}
+
+#scroll-btn {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    width: 100%;
+}
+
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.section-title {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+
+
+.content-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    height: 300px;
+}
+
+.content-item2 {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    height: 300px;
+    align-items: center;
+    flex-direction: row;
+    /* align-content: flex-end; */
+    justify-content: flex-end;
+}
+
+
+
+.text-content h2 {
+    margin: 0 0 10px 000px;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 0 0 0px 000px;
+    font-size: 14px;
+    color: #666;
+}
+
+.text-content2 h2 {
+    margin: 0 0 10px 500px;
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
+}
+
+.text-content2 p {
+    margin: 0 0 0px 500px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    justify-content: end;
+}
+
+.end {
+    display: flex;
+    justify-content: end;
+}
+
+
+.inner_footer {
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+}
+
+/* ซ่อนเนื้อหาเริ่มต้น */
+.content-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.content-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-item2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.content-item2.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/*image*/
+.image-placeholder {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 0px;
+    display: flex;
+}
+
+.image-placeholder2 {
+    width: 300px;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 0px;
+    display: flex;
+
+}
+
+.img-journey {
+    width: 300px;
+    height: 300px;
+    /*display: flex;
+align-self: flex-end;
+margin-left: auto;*/
+}
+
+/*Journey  PC*/
+
+
+/*Journey  Phone*/
+@media (max-width: 360px) {
     .content-item {
         display: flex;
-        align-items: center;
         gap: 20px;
-        background: white;
+        /* background: white; */
         padding: 15px;
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
         height: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
-    .content-item.reverse {
-        flex-direction: row-reverse;
-    }
-    
-    .image-placeholder {
-        width: 300px;
-        height: 300px;
-        background-color: #ccc;
-        border-radius: 0px;
-        display: flex;
-    }
-    
-    .image-placeholder2 {
-        width: 300px;
-        height: 300px;
-        background-color: #ccc;
-        border-radius: 0px;
-        display: flex;
-        align-self: flex-end;
-        margin-left: auto;
-    }
-    
-    .text-content h2 {
-        margin: 0 0 10px 000px;
-        font-size: 18px;
-    }
-    
-    .text-content p {
-        margin: 0 0 0px 000px;
-        font-size: 14px;
-        color: #666;
-    }
-    
-    .text-content2 h2 {
-        margin: 0 0 10px 500px;
-        font-size: 18px;
-        display: flex;
-        justify-content: end;
-    }
-    
-    .text-content2 p {
-        margin: 0 0 0px 500px;
-        font-size: 14px;
-        color: #666;
-        display: flex;
-        justify-content: end;
-    }
-    .end{
-        display: flex;
-        justify-content: end;
-    }
-    
-    
-    .inner_footer{
+
+    .text-content2 {
         display: block;
-        margin: 0 auto;
-        width: 1100px;
-        height: 100%;
+        position: relative;
     }
-    /* ซ่อนเนื้อหาเริ่มต้น */
-    .content-item {
-        opacity: 0;
-        transform: translateY(50px); 
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-    
-    
-    .content-item.show {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-    
-    .img-journey{
- width: 300px;
- height: 300px;
-    }
-/*Journey  PC*/
 
-
-    /*Journey  Phone*/
-
-
-    /*Journey  Tablet*/
-
-
-    /*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
-
-    /* photo1 + ข้อความ */
-    .regtangle1-text-container {
+    .wrap-journey {
         display: flex;
-        align-items: flex-start; 
-        margin-top: 20px;
-        gap: 20px;
     }
-    
-    /* photo1 */
-    .photo1 {
-        width: 650px; 
-        height: auto; 
-        flex-shrink: 0; 
-        border-radius: 0px; 
-        margin-left: 100px;
-        margin-right: 50px;
-        margin-top: 80px;
-    }
-    
-    /* ข้อความ */
-    .textparagraph2 {
-        text-align: justify;
-        color: #333; 
-        font-size: 22px; 
-        margin-top: 80px;
 
-        font-family: "Kanit", serif;;
-    }
-    .textparagraph2 .game{
-        font-size: large;
-    }
-    .textparagraph2 .garfield{
-        font-size: large;
-    }
-    .textparagraph2 .fluke{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    .textparagraph2 .can{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    .textparagraph2 .june{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    
-    /*---------------------------------------------------------------------------------------------------*/
-    
-    .regtangle2-text-container {
+    .content-item2 {
         display: flex;
-        flex-direction: row-reverse; 
-        align-items: flex-start; 
-        margin-top: 20px;
+        flex-wrap: wrap-reverse;
+        
     }
-    
-    .photo2 {
-        flex-shrink: 0;
-        width: 600px;
+
+    .content-container img {
+        justify-content: center;
+
+    }
+
+    .img-journey {
+        width: 300px;
         height: auto;
-        border-radius: 0%;
-        margin-top: 70px; 
-        margin-left: 100px; 
-        margin-right: 100px;
+      }
+
+  
+}
+
+/*Journey  Tablet*/
+
+
+/*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
+
+/* photo1 + ข้อความ */
+.regtangle1-text-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* photo1 */
+.photo1 {
+    width: 650px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 0px;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+
+/* ข้อความ */
+.textparagraph2 {
+    text-align: justify;
+    color: #333;
+    font-size: 22px;
+    margin-top: 80px;
+
+    font-family: "Kanit", serif;
+    ;
+}
+
+.textparagraph2 .game {
+    font-size: large;
+}
+
+.textparagraph2 .garfield {
+    font-size: large;
+}
+
+.textparagraph2 .fluke {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.textparagraph2 .can {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.textparagraph2 .june {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.regtangle2-text-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.photo2 {
+    flex-shrink: 0;
+    width: 600px;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.textparagraph3 {
+    font-size: 23px;
+    color: #333;
+    padding-top: 50px;
+    margin: 0;
+    white-space: pre-line;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    .regtangle1-text-container,
+    .regtangle2-text-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
+    .photo1,
+    .photo2 {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .textparagraph2,
     .textparagraph3 {
-        font-size: 23px;
-        color: #333;
-        padding-top: 50px;
-        margin: 0; 
-        white-space: pre-line; 
-        margin-left: 100px; 
-        margin-right: 100px;
-        margin-top: 80px; 
-        margin-bottom: 80px; 
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
     }
+}
 
+@media (max-width: 768px) {
 
-    
-    @media (max-width: 1024px) {
-        .regtangle1-text-container, .regtangle2-text-container {
-            flex-direction: column; 
-            align-items: center;
-            gap: 15px;
-        }
-    
-        .photo1, .photo2 {
-            width: 90%; 
-            margin-left: 0;
-            margin-right: 0;
-        }
-    
-        .textparagraph2, .textparagraph3 {
-            font-size: 18px; 
-            margin-left: 20px;
-            margin-right: 20px;
-            margin-top: 20px;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .photo1, .photo2 {
-            width: 100%; 
-            margin-left: 0;
-            margin-right: 0;
-        }
-    }
-
-    .footer{
-        position:absolute;
-        margin-top: auto;
+    .photo1,
+    .photo2 {
         width: 100%;
-        height: 200px;
-        display: flex;
-        overflow: hidden;
-        padding: 70px 0;
-        box-sizing: border-box;
-        background-color: #050505;
+        margin-left: 0;
+        margin-right: 0;
     }
-    .inner_footer .footer_logo{
-        position: relative;
-        width: 50%;
-        padding-left: 70%;
-        top: -50px;
-        object-fit: scale-down;
+}
 
-    }
-    .inner_footer .indexfooter_logo{
-        position: relative;
-        width: 50%;
-        padding-left: 70%;
-        top: -220px;
-        object-fit: scale-down;
-    }
-    
-    
-    
+.footer {
+    position: absolute;
+    margin-top: auto;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    padding: 70px 0;
+    box-sizing: border-box;
+    background-color: #050505;
+}
+
+.inner_footer .footer_logo {
+    position: relative;
+    width: 50%;
+    padding-left: 70%;
+    top: -50px;
+    object-fit: scale-down;
+
+}
+
+.inner_footer .indexfooter_logo {
+    position: relative;
+    width: 50%;
+    padding-left: 70%;
+    top: -220px;
+    object-fit: scale-down;
+}

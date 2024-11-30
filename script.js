@@ -93,5 +93,23 @@ document.addEventListener("DOMContentLoaded", () => {
     contentItems.forEach(item => observer.observe(item));
 });
 
+// ฟังก์ชันที่ใช้ Intersection Observer
+document.addEventListener("DOMContentLoaded", () => {
+    const contentItems2 = document.querySelectorAll('.content-item2');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show'); // 
+            } else {
+                entry.target.classList.remove('show'); //
+            }
+        });
+    }, {
+        threshold: 0.2 // 
+    });
+
+    contentItems2.forEach(item2 => observer.observe(item2));
+});
 
 
