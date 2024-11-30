@@ -436,11 +436,20 @@ display: flex;
         position:absolute;
         margin-top: auto;
         width: 100%;
-        display: fixed;
+        height: 200px;
+        display: flex;
         overflow: hidden;
         padding: 70px 0;
         box-sizing: border-box;
         background-color: #302f2f;
+    }
+    .inner_footer .footer_logo{
+        position: relative;
+        width: 50%;
+        padding-left: 70%;
+        top: -50px;
+        object-fit: scale-down;
+
     }
     
     
