@@ -345,7 +345,29 @@ display: flex;
         color: #333; 
         font-size: 22px; 
         margin-top: 80px;
-        font-family: Niramit;
+
+        font-family: "Kanit", serif;;
+    }
+    .textparagraph2 .game{
+        font-size: large;
+    }
+    .textparagraph2 .garfield{
+        font-size: large;
+    }
+    .textparagraph2 .fluke{
+        font-size: medium;
+        padding-left: 10%;
+        margin-bottom: 5%;
+    }
+    .textparagraph2 .can{
+        font-size: medium;
+        padding-left: 10%;
+        margin-bottom: 5%;
+    }
+    .textparagraph2 .june{
+        font-size: medium;
+        padding-left: 10%;
+        margin-bottom: 5%;
     }
     
     /*---------------------------------------------------------------------------------------------------*/
@@ -420,5 +442,6 @@ display: flex;
         box-sizing: border-box;
         background-color: #302f2f;
     }
+    
     
     
