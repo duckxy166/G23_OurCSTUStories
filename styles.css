@@ -122,7 +122,8 @@ html {
     margin-top: 300px;
     text-align: center;
     color: white;
-    background: rgba(0, 0, 0, 1); /* เพิ่มความมืดให้ภาพ */
+    background: rgba(0, 0, 0, 1);
+    /* เพิ่มความมืดให้ภาพ */
     padding: 20px;
     border-radius: 0px;
 
@@ -384,7 +385,7 @@ margin-left: auto;*/
     .content-item2 {
         display: flex;
         flex-wrap: wrap-reverse;
-        
+
     }
 
     .content-container img {
@@ -395,9 +396,9 @@ margin-left: auto;*/
     .img-journey {
         width: 300px;
         height: auto;
-      }
+    }
 
-  
+
 }
 
 /*Journey  Tablet*/
@@ -432,47 +433,52 @@ margin-left: auto;*/
     margin-top: 80px;
 
     font-family: "Athiti", sans-serif;
-    }
-    .textparagraph2 .game{
-        font-size: large;
-    }
-    .textparagraph2 .garfield{
-        font-size: large;
-    }
-    .textparagraph2 .fluke{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    .textparagraph2 .can{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    .textparagraph2 .june{
-        font-size: medium;
-        padding-left: 10%;
-        margin-bottom: 5%;
-    }
-    
-    /*---------------------------------------------------------------------------------------------------*/
-    
-    .regtangle2-text-container {
-        display: flex;
-        flex-direction: row-reverse; 
-        align-items: flex-start; 
-        margin-top: 20px;
-    }
-    
-    .photo2 {
-        flex-shrink: 0;
-        width: 600px;
-        height: auto;
-        border-radius: 0%;
-        margin-top: 70px; 
-        margin-left: 100px; 
-        margin-right: 100px;
-    }
+}
+
+.textparagraph2 .game {
+    font-size: large;
+}
+
+.textparagraph2 .garfield {
+    font-size: large;
+}
+
+.textparagraph2 .fluke {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.textparagraph2 .can {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+.textparagraph2 .june {
+    font-size: medium;
+    padding-left: 10%;
+    margin-bottom: 5%;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.regtangle2-text-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.photo2 {
+    flex-shrink: 0;
+    width: 600px;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 .textparagraph3 {
     font-size: 23px;
@@ -505,7 +511,7 @@ margin-left: auto;*/
     }
 
     .textparagraph2,
-.textparagraph3 {
+    .textparagraph3 {
         font-size: 18px;
         margin-left: 20px;
         margin-right: 20px;
