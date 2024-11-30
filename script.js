@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const heroTitle = document.getElementById("hero-title");
     const heroSubtitle = document.getElementById("hero-subtitle");
 
- ซ่อนข้อความ
+    ซ่อนข้อความ
     heroTitle.style.opacity = 0;
     heroTitle.style.transform = "translateY(-20px)";
     heroSubtitle.style.opacity = 0;
@@ -70,7 +70,7 @@ slides.addEventListener('touchend', (e) => {
 // Scroll listener to pause auto slide when scrolling
 window.addEventListener('scroll', () => {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(() => changeSlide(1),3000);
+    autoSlideInterval = setInterval(() => changeSlide(1), 3000);
 });
 
 
