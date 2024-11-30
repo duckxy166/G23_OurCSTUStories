@@ -436,32 +436,76 @@ margin-left: auto;*/
     color: #ffffff;
     font-size: 22px;
     margin-top: 80px;
-
     font-family: "Athiti", sans-serif;
 }
 
 .textparagraph2 .game {
     
+    width: auto;
+    height: auto;
+    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* ทำให้เบลอ */
+    border-radius: 15px; /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    padding: 20px;
     font-size: large;
+    padding-left: 10%;
+    margin-bottom: 5%;
 }
 
 .textparagraph2 .garfield {
+    width: auto;
+    height: auto;
+    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* ทำให้เบลอ */
+    border-radius: 15px; /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    padding: 20px;
     font-size: large;
+    padding-left: 10%;
+    margin-bottom: 5%;
 }
 
 .textparagraph2 .fluke {
+    width: auto;
+    height: auto;
+    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* ทำให้เบลอ */
+    border-radius: 15px; /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    padding: 20px;
+    padding-left: 20px;
     font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
 
 .textparagraph2 .can {
+    width: auto;
+    height: auto;
+    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* ทำให้เบลอ */
+    border-radius: 15px; /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    padding: 20px;
     font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
 
 .textparagraph2 .june {
+    width: auto;
+    height: auto;
+    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px); /* ทำให้เบลอ */
+    border-radius: 15px; /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    padding: 20px;
     font-size: large ;
     padding-left: 10%;
     margin-bottom: 5%;
