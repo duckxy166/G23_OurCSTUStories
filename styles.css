@@ -441,7 +441,7 @@ display: flex;
         overflow: hidden;
         padding: 70px 0;
         box-sizing: border-box;
-        background-color: #302f2f;
+        background-color: #050505;
     }
     .inner_footer .footer_logo{
         position: relative;
@@ -450,6 +450,13 @@ display: flex;
         top: -50px;
         object-fit: scale-down;
 
+    }
+    .inner_footer .indexfooter_logo{
+        position: relative;
+        width: 50%;
+        padding-left: 70%;
+        top: -220px;
+        object-fit: scale-down;
     }
     
     
