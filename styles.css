@@ -182,6 +182,11 @@ html {
     background-color: #555;
   }
   
+  .image-small img{
+    width: 160%;
+    height: auto;
+  }
+  
 
 
 
