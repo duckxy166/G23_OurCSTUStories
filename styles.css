@@ -24,6 +24,7 @@ html {
     align-items: center;
     background-color: #050505;
     padding: 10px 20px;
+    z-index: 1000;
 }
 
 .navbar a {
@@ -58,10 +59,11 @@ html {
     .navbar .menu.active {
         display: flex;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         right: 0;
         background-color: #302f2f;
+        z-index: 1000;
     }
 
     .menu-toggle {
