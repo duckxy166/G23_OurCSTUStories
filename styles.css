@@ -753,10 +753,16 @@ margin-left: auto;*/
     height: 40px;
     border: none;
     background-color: red;
+    font-size: large;
+    color: #ffffff;
 }
 .headform{
     position: absolute;
     color: white;
     width: 100%;
     top: 5%;
+}
+.submit-btn:hover{
+    color: #050505;
+    background-color: rgba(255, 0, 0, 0.521);
 }
