@@ -98,9 +98,18 @@ html {
     color:white;
     font-family: "Athiti", serif;
     position: absolute;
-    bottom: 10%;
+    bottom: 88%;
     padding-left: 80%;
     font-size: 80px;
+}
+.description{
+    color:white;
+    font-family: "Athiti", serif;
+    position: absolute;
+    bottom: 86%;
+    padding-left: 80%;
+    font-size: 27px;
+    font-weight: 300;
 }
 .large-block {
     display: flex;
@@ -220,6 +229,7 @@ html {
     background: #585858;
     font-size: 18px;
     color: rgba(255, 255, 255, 0.623);
+    cursor: pointer;
     border: none;
     outline: none;
   }
@@ -231,7 +241,44 @@ html {
     width: 160%;
     height: auto;
   }
-  
+  .text-small_index{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    left: 30%;
+    bottom: -600px;
+  }
+  .buttons_index {
+    display: flex;
+    margin-top: 5%;
+    gap: 15px;
+}
+
+.buttons_index button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.buttons_index button:hover {
+    background-color: #b30000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.buttons_index button:active {
+    background-color: #800000;
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 
 
