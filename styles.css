@@ -768,3 +768,17 @@ margin-left: auto;*/
     color: #050505;
     background-color: rgba(255, 0, 0, 0.521);
 }
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.wave-text {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+}
