@@ -243,15 +243,29 @@ html {
   }
   .text-small_index{
     position: relative;
-    font-size: 40px;
+    font-size: 54px;
     font-weight: 500;
     color: #ffffff;
+    line-height: 70%;
     left: 30%;
-    bottom: -600px;
+    bottom: -570px;
+    padding-left: 1%;
+  }
+  .text-small_index .nick{
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+    bottom: -1%;
+  }
+  .text-small_index .ID{
+    position: relative;
+    font-size: 25px;
+    font-weight: 300;
+    bottom: 0%;
   }
   .buttons_index {
     display: flex;
-    margin-top: 5%;
+    margin-top: 20%;
     gap: 15px;
 }
 
@@ -666,6 +680,11 @@ margin-left: auto;*/
     font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
+}
+
+.textparagraph2 .game:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .textparagraph2 .garfield {
