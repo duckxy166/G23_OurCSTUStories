@@ -120,7 +120,7 @@ html {
     display: flex;
 }
 
-.header.HEAD {
+.HEAD {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
