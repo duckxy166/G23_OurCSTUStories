@@ -181,4 +181,5 @@ document.addEventListener("DOMContentLoaded", () => {
     contentItems2.forEach(item2 => observer.observe(item2));
 });
 
+//Future
 
