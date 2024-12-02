@@ -96,11 +96,16 @@
       </section>
 
       <form class="form" id="dataForm">
-        <input type="text" name="yourname" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <textarea name="comment" placeholder="Comment Here!!"></textarea>
-        <button type="submit" id="submitButton">Send</button>
+        <input type="text" id="name" name="yourname" placeholder="Name">
+        <input type="email" id="email"name="email" placeholder="Email">
+        <textarea name="comment" id="comment"placeholder="Comment Here!!"></textarea>
+        <button type="button" id="submitButton">Send</button>
       </form>
+
+      <ul>
+          dsadasd
+
+      </ul>
 
     </main>
 
@@ -116,5 +121,16 @@
 
 
 </body>
-<script src="script.js"></script>
+<script src="script.js">
+  const btn = document.querySelector('button');
+  const input = document.querySelector('input');
+  const textarea = document.querySelector('textarea');
+   list = document.querySelector('ul')
+
+  btn.addEventListener('click', () =>{
+  const inputValue = textarea.value;
+  list.insertAdjacentHTML('beforeend', `${inputValue}`);
+});
+
+</script>
 </html>
