@@ -8,6 +8,7 @@ body {
     font-family: "Inter", sans-serif;
     position: relative;
     background-color: #1d1d1d;
+    overflow-x: hidden;
 }
 
 html {
@@ -251,6 +252,7 @@ html {
 }
 
 .form button {
+    position: relative;
     padding: 10px 30px;
     background: #585858;
     font-size: 18px;
@@ -306,6 +308,8 @@ html {
 }
 
 .buttons_index button {
+    position: relative;
+    top: -40px;
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -338,13 +342,14 @@ html {
     background-color: #424242;
     border: none;
     cursor: pointer;
+    overflow: hidden;
 }
 .Comment form .topic:hover{
     color: rgb(255, 255, 255);
     border-bottom: 2px solid red;
 }
 .beforeform{
-    position: absolute;
+    position: relative;
     color: #ffffff;
     left: 20%;
     bottom: 13.2%;
@@ -794,25 +799,25 @@ margin-left: auto;*/
 .textparagraph2 {
     text-align: justify;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 80px;
     font-weight: 200;
-    line-height: 150%;
     font-family: "Inter", sans-serif;
 }
 
 .textparagraph2 .future {
-    position: absolute;
-    bottom: 50%;
+    position: relative;
+    top: 120px;
     font-size: 80px;
+    left: 55px;
     font-family: "Inter", sans-serif;
 }
 
 .textparagraph2 .goal {
-    position: absolute;
-    bottom:35%;
+    position: relative;
+    top:130px;
     font-size: 30px;
-    left: 55%;
+    left: 190px;
     font-family: "Inter", sans-serif;
 }
 
@@ -1033,6 +1038,7 @@ margin-left: auto;*/
 
 .inner_footer .indexfooter_logo {
     position: absolute;
+    overflow: hidden;
     width: 30%;
     padding-left: 40%;
     top: 50px;
@@ -1043,6 +1049,7 @@ margin-left: auto;*/
 .inner_footer .form {
     position: relative;
     display: fixed;
+    overflow: hidden;
     color: white;
     top: -40px;
     z-index: 2;
