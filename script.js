@@ -64,6 +64,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//index animation
+document.addEventListener('DOMContentLoaded', () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.regtangle-index-text-container');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                section.style.animationPlayState = 'running';
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+
+    observer.observe(section);
+});
 
 
 

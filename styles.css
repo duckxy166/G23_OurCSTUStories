@@ -16,7 +16,16 @@ html {
 }
 
 /*Animation*/
-
+@keyframes flyIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 /*Navigator bar*/
 .navbar {
     display: flex;
@@ -82,11 +91,16 @@ html {
 
 
 /*HOME*/
+
+
+
 .regtangle-index-text-container {
     margin: 0;
     padding: 0;
     display: flex;
-
+    opacity: 0;
+    animation: flyIn 1s ease-out forwards;
+    align-items: center;
 }
 
 .photo1-index {
@@ -101,15 +115,23 @@ html {
     bottom: 88%;
     padding-left: 80%;
     font-size: 80px;
+    display: flex;
+}
+.HEAD{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        flex-wrap: wrap;
 }
 .description{
     color:white;
     font-family: "Athiti", serif;
     position: absolute;
-    bottom: 86%;
     padding-left: 80%;
     font-size: 27px;
     font-weight: 300;
+    display: flex;
 }
 .large-block {
     display: flex;
@@ -267,6 +289,7 @@ html {
     display: flex;
     margin-top: 20%;
     gap: 15px;
+    z-index: 1000;
 }
 
 .buttons_index button {
@@ -315,6 +338,69 @@ html {
     }
   }
 
+/*Animation*/
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .image-large:hover, .image-small img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(1.2);
+  }
+  
+
+  .buttons_index button:hover {
+    background-color: #b30000;
+    transform: translateY(-5px) scale(1.05);
+  }
+  
+  /* Text Animations */
+  .text-large, .text-small {
+    animation: slideIn 1s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  @keyframes flyIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+ 
+  
+
+
+
+  
 
 
 
@@ -631,6 +717,8 @@ margin-left: auto;*/
 
 /* photo1 + ข้อความ */
 .regtangle1-text-container {
+    opacity: 0;
+    animation: flyIn 1s ease-out forwards;
     display: flex;
     align-items: flex-start;
     margin-top: 20px;
