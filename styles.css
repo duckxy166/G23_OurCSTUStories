@@ -8,6 +8,7 @@ body {
     font-family: "Inter", sans-serif;
     position: relative;
     background-color: #1d1d1d;
+    overflow-x: hidden;
 }
 
 html {
@@ -814,9 +815,9 @@ margin-left: auto;*/
 
 .textparagraph2 .goal {
     position: relative;
-    top:100px;
+    top:130px;
     font-size: 30px;
-    left: 170px;
+    left: 190px;
     font-family: "Inter", sans-serif;
 }
 
