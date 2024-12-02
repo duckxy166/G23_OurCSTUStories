@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: "Athiti", serif;
+    font-family: "Inter", sans-serif;
     position: relative;
     background-color: #1d1d1d;
 }
@@ -112,30 +112,24 @@ html {
 
 .Group {
     color: white;
-    font-family: "Athiti", serif;
+    font-family: "Inter", sans-serif;
     position: absolute;
-    bottom: 88%;
+    bottom: 17%;
     padding-left: 80%;
-    font-size: 80px;
+    font-size: 75px;
     display: flex;
-}
-
-.HEAD {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    position: relative;
-    flex-wrap: wrap;
 }
 
 .description {
     color: white;
-    font-family: "Athiti", serif;
+    font-family: "Inter", sans-serif;
     position: absolute;
     padding-left: 80%;
     font-size: 27px;
     font-weight: 300;
     display: flex;
+    bottom:5%;
+    left: 0.2%;
 }
 
 .large-block {
@@ -241,7 +235,7 @@ html {
     margin-bottom: 10px;
 }
 
-.form textarea[name="comment"] {
+.Comment form textarea[name="message"] {
     border: none;
     outline: none;
     border-bottom: 2px solid #585858;
@@ -252,7 +246,7 @@ html {
     box-sizing: border-box;
 }
 
-.form textarea[name="comment"]:focus {
+.Comment form textarea[name="message"]:focus {
     border-bottom: 2px solid red;
 }
 
@@ -264,6 +258,9 @@ html {
     cursor: pointer;
     border: none;
     outline: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
 }
 
 .form button:hover {
@@ -278,10 +275,10 @@ html {
 
 .text-small_index {
     position: relative;
-    font-size: 54px;
+    font-size: 45px;
     font-weight: 500;
     color: #ffffff;
-    line-height: 70%;
+    line-height: 85%;
     left: 30%;
     bottom: -570px;
     padding-left: 1%;
@@ -289,14 +286,14 @@ html {
 
 .text-small_index .nick {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     bottom: -1%;
 }
 
 .text-small_index .ID {
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     bottom: 0%;
 }
@@ -331,6 +328,40 @@ html {
     background-color: #800000;
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.Comment form .topic{
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.61);
+    background-color: #424242;
+    border: none;
+    cursor: pointer;
+}
+.Comment form .topic:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid red;
+}
+.beforeform{
+    position: absolute;
+    color: #ffffff;
+    left: 20%;
+    bottom: 11.5%;
+    font-size: 50px;
+}
+.beforeform_1{
+    position: relative;
+    color: #ffffff;
+    left: 20%;
+    font-size: 20px;
+}
+.Comment-show{
+    position: absolute;
+    color: #ffffff;
+    left: 60%;
+    bottom:11%
+    
 }
 
 
