@@ -64,23 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//index animation
-document.addEventListener('DOMContentLoaded', () => {
-    const fadeElements = document.querySelectorAll('.fade-in');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-
-    fadeElements.forEach(el => observer.observe(el));
-});
-
 
 
 //Nav bar
@@ -89,79 +72,14 @@ function toggleMenu() {
     menu.classList.toggle('active');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('guestBookForm');
-    const entries = document.getElementById('entries');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // Clear previous errors
-        document.querySelectorAll('.error-message').forEach((msg) => {
-            msg.textContent = '';
-        });
-
-        // Form field values
-        const fullName = document.getElementById('fullName').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const topic = document.getElementById('topic').value;
-        const message = document.getElementById('message').value.trim();
-
-        let isValid = true;
-
-        // Validation checks
-        if (fullName === '') {
-            document.getElementById('nameError').textContent = 'Full Name is required.';
-            isValid = false;
-        }
-
-        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
-            document.getElementById('emailError').textContent = 'Please enter a valid email address.';
-            isValid = false;
-        }
-
-        if (!topic) {
-            document.getElementById('topicError').textContent = 'Please select a topic.';
-            isValid = false;
-        }
-
-        if (message === '') {
-            document.getElementById('messageError').textContent = 'Message cannot be empty.';
-            isValid = false;
-        }
-
-        if (isValid) {
-            // Create entry
-            const entry = document.createElement('div');
-            entry.className = 'entry-item';
-
-            entry.innerHTML = `
-                <div class="entry-profile">${fullName.charAt(0).toUpperCase()}</div>
-                <div class="entry-text">
-                    <h3>${fullName}</h3>
-                    <p><strong>Topic:</strong> ${topic}</p>
-                    <p class="entry-email"><strong>Email:</strong> ${email}</p>
-                    <p>${message}</p>
-                </div>
-            `;
-
-            entries.appendChild(entry);
-
-            // Reset form
-            form.reset();
-        }
-    });
-});
 
 
-
-
-// เพิ่มแอนิเมชันให้ข้อความใน Hero Section
+// Animation Hero Section
 document.addEventListener("DOMContentLoaded", () => {
     const heroTitle = document.getElementById("hero-title");
     const heroSubtitle = document.getElementById("hero-subtitle");
 
-    ซ่อนข้อความ
+
     heroTitle.style.opacity = 0;
     heroTitle.style.transform = "translateY(-20px)";
     heroSubtitle.style.opacity = 0;
@@ -208,7 +126,7 @@ document.querySelector('.next').addEventListener('click', () => changeSlide(1));
 
 
 
-// Swipe support
+// ค่าปุ่มเลื่อน
 let startX = 0;
 slides.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
@@ -219,14 +137,13 @@ slides.addEventListener('touchend', (e) => {
     if (endX - startX > 50) changeSlide(-1); // Swipe ขวาเพื่อเลื่อนไปซ้าย (Prev)
     resetAutoSlide();
 });
-// Scroll listener to pause auto slide when scrolling
 window.addEventListener('scroll', () => {
     clearInterval(autoSlideInterval);
     autoSlideInterval = setInterval(() => changeSlide(1), 3000);
 });
 
 
-// ฟังก์ชันที่ใช้ Intersection Observer
+// ฟังก์ชันที่ใช้ Fade ขึ้นหน้า journey
 document.addEventListener("DOMContentLoaded", () => {
     const contentItems = document.querySelectorAll('.content-item');
 
@@ -245,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     contentItems.forEach(item => observer.observe(item));
 });
 
-// ฟังก์ชันที่ใช้ Intersection Observer
+// ฟังก์ชันที่ใช้ Fade ขึ้นหน้า journey
 document.addEventListener("DOMContentLoaded", () => {
     const contentItems2 = document.querySelectorAll('.content-item2');
 

@@ -16,12 +16,13 @@ html {
 
 }
 
-/*pop up*/
+/*pop up Animation*/
 @keyframes appear {
     from {
         opacity: 0;
         transform: scale(0.5);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -31,8 +32,10 @@ html {
 section {
     animation: appear 1s ease-in-out;
     animation-fill-mode: forwards;
-    animation-timeline: view(); /* Experimental */
-    animation-range: entry 0% cover 40%; /* Experimental */
+    animation-timeline: view();
+
+    animation-range: entry 0% cover 40%;
+
 }
 
 
@@ -150,7 +153,7 @@ section {
     font-size: 25px;
     font-weight: 300;
     display: flex;
-    bottom:3%;
+    bottom: 3%;
     left: 0.2%;
 }
 
@@ -354,7 +357,8 @@ section {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.Comment form .topic{
+
+.Comment form .topic {
     text-align: center;
     padding: 5px 20px;
     font-size: 16px;
@@ -365,23 +369,27 @@ section {
     cursor: pointer;
     overflow: hidden;
 }
-.Comment form .topic:hover{
+
+.Comment form .topic:hover {
     color: rgb(255, 255, 255);
     border-bottom: 2px solid red;
 }
-.beforeform{
+
+.beforeform {
     position: relative;
     color: #ffffff;
     left: 20%;
     bottom: 13.2%;
     font-size: 50px;
 }
-.beforeform_1{
+
+.beforeform_1 {
     position: relative;
     color: #ffffff;
     left: 20%;
     font-size: 20px;
 }
+
 .Comment-show {
     position: relative;
     font-family: "Inter", sans-serif;
@@ -397,10 +405,10 @@ section {
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold;
-    
+
 }
 
-.Comment-show .entry-list{
+.Comment-show .entry-list {
     position: relative;
     background-color: transparent;
     color: #ffffff;
@@ -673,7 +681,7 @@ header {
 .text-content h2 {
     margin: 0 0 10px 000px;
     font-size: 30px;
-    color:  #ffffff;
+    color: #ffffff;
 }
 
 .text-content p {
@@ -761,7 +769,8 @@ header {
 align-self: flex-end;
 margin-left: auto;*/
 }
-.img-journey_can{
+
+.img-journey_can {
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -865,7 +874,7 @@ margin-left: auto;*/
 
 .textparagraph2 .goal {
     position: relative;
-    top:130px;
+    top: 130px;
     font-size: 30px;
     left: 190px;
     font-family: "Inter", sans-serif;
@@ -1162,5 +1171,3 @@ margin-left: auto;*/
     display: inline-block;
     animation: wave 1.5s ease-in-out infinite;
 }
-
-
