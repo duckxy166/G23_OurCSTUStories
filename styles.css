@@ -100,34 +100,6 @@ html {
 
 
 .regtangle-index-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* จัดข้อความให้ตรงกลางในแนวนอน */
-    justify-content: center; /* จัดข้อความให้ตรงกลางในแนวตั้ง */
-    text-align: center; /* ทำให้ข้อความอยู่ตรงกลาง */
-    height: 100vh; /* ใช้ความสูงเต็มหน้าจอ */
-    padding: 0 20px; /* เพิ่ม padding ขอบ */
-}
-
-.Group, .description {
-    margin: 0; /* ลบ margin ที่อาจทำให้ข้อความลอย */
-    padding: 10px 0; /* เพิ่ม padding ให้ข้อความไม่ชิดขอบ */
-}
-
-.wave-text {
-    font-size: 3rem; /* ขนาดตัวอักษรสำหรับ "Group 23" */
-    font-weight: bold;
-}
-
-.description {
-    font-size: 1.5rem; /* ขนาดตัวอักษรสำหรับคำอธิบาย */
-    margin-top: 20px; /* เพิ่มระยะห่างระหว่าง "Group 23" กับคำอธิบาย */
-}
-
-
-
-
-.regtangle-index-text-container {
     margin: 0;
     padding: 0;
     display: flex;
