@@ -627,6 +627,7 @@ header {
 .text-content h2 {
     margin: 0 0 10px 000px;
     font-size: 30px;
+    color:  #ffffff;
 }
 
 .text-content p {
@@ -714,6 +715,15 @@ header {
 align-self: flex-end;
 margin-left: auto;*/
 }
+.img-journey_can{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /*display: flex;
+align-self: flex-end;
+margin-left: auto;*/
+}
+
 
 /*Journey  PC*/
 
