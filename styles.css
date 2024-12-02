@@ -422,23 +422,40 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
-    .large-block,
-    .small-block {
-        flex-direction: column;
+    .menu {
+        display: flex;
     }
-
-    .image-large,
-    .image-small {
-        width: 100%;
-        height: 200px;
-    }
-
-    .text-large,
-    .text-small {
-        width: 100%;
-    }
+    body {
+    font-size: 14px;
+    padding: 10px;
 }
+.container {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header,
+.content,
+.sidebar {
+    flex: 1 1 100%;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+}
+.menu-icon {
+    display: block;
+    cursor: pointer
+    ;
+}
+.header{
+    text-align: center;
+}
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
 /*Animation*/
 
