@@ -1097,16 +1097,7 @@ margin-left: auto;*/
     margin-top: 80px;
     margin-bottom: 80px;
 }
-/*Scroll bar*/
-.scroller {
-    width: 100%;
-    height: 281px;
-    overflow-y: scroll;
-    scrollbar-color: #007 #bada55;
-    background-color: rgb(17, 17, 17);
-    margin-left: 100px;
-  }
-  
+
 
 @media (max-width: 1024px) {
 
