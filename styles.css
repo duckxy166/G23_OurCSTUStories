@@ -626,13 +626,13 @@ header {
 
 .text-content h2 {
     margin: 0 0 10px 000px;
-    font-size: 18px;
+    font-size: 30px;
 }
 
 .text-content p {
     margin: 0 0 0px 000px;
     font-size: 14px;
-    color: #666;
+    color: #ffffff;
 }
 
 .text-content2 h2 {
@@ -795,16 +795,24 @@ margin-left: auto;*/
     color: #ffffff;
     font-size: 22px;
     margin-top: 80px;
-    font-family: "Athiti", sans-serif;
+    font-weight: 200;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;
 }
 
 .textparagraph2 .future {
+    position: absolute;
+    bottom: 50%;
     font-size: 100px;
+    font-family: "Inter", sans-serif;
 }
 
 .textparagraph2 .goal {
+    position: absolute;
+    bottom:35%;
     font-size: 30px;
-    text-align: center;
+    left: 55%;
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -852,6 +860,11 @@ margin-left: auto;*/
     margin-bottom: 5%;
 }
 
+.textparagraph2 .garfield:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 .textparagraph2 .fluke {
     width: auto;
     height: auto;
@@ -872,6 +885,11 @@ margin-left: auto;*/
     margin-bottom: 5%;
 }
 
+.textparagraph2 .fluke:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 .textparagraph2 .can {
     width: auto;
     height: auto;
@@ -886,6 +904,11 @@ margin-left: auto;*/
     margin-bottom: 5%;
 }
 
+.textparagraph2 .can:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
 .textparagraph2 .june {
     width: auto;
     height: auto;
@@ -898,6 +921,11 @@ margin-left: auto;*/
     font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
+}
+
+.textparagraph2 .june:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /*---------------------------------------------------------------------------------------------------*/
