@@ -95,17 +95,36 @@
         </div>
       </section>
 
-      <form class="form" id="dataForm">
-        <input type="text" id="name" name="yourname" placeholder="Name">
-        <input type="email" id="email"name="email" placeholder="Email">
-        <textarea name="comment" id="comment"placeholder="Comment Here!!"></textarea>
-        <button type="button" id="submitButton">Send</button>
-      </form>
+             <div class="Comment form">
+                <h1>Guest Book</h1>
+                <p>Comment and share your opinion.</p>
+                <form id="guestBookForm" class="form-container">
+                    <input type="text" id="User" name="User" required placeholder="Name">
+                    <span class="error-message" id="nameError"></span>
 
-      <ul>
-          dsadasd
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    <span class="error-message" id="emailError"></span>
 
-      </ul>
+                    <select id="topic" name="topic" required>
+                        <option value="" disabled selected>SELECT TOPIC</option>
+                        <option value="Feedback">FEEDBACK</option>
+                        <option value="Question">QUESTION</option>
+                        <option value="Suggestion">SUGGESTION</option>
+                    </select>
+
+                    <textarea id="message" name="message" rows="4" required placeholder="Write Your Message"></textarea>
+                    <span class="error-message" id="topicError"></span>
+
+                    <button type="submit" class="btn-submit">Submit</button>
+                </form>
+            </div>
+
+
+            <div class="Comment-show">
+                <h1>Submitted Entries</h1>
+                <div id="entries" class="entry-list"></div>
+            </div>
+        </div>
 
     </main>
 
@@ -122,15 +141,5 @@
 
 </body>
 <script src="script.js">
-  const btn = document.querySelector('button');
-  const input = document.querySelector('input');
-  const textarea = document.querySelector('textarea');
-   list = document.querySelector('ul')
-
-  btn.addEventListener('click', () =>{
-  const inputValue = textarea.value;
-  list.insertAdjacentHTML('beforeend', `${inputValue}`);
-});
-
 </script>
 </html>

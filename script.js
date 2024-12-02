@@ -1,9 +1,143 @@
+//HTML FORM
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('guestBookForm');
+    const entries = document.getElementById('entries');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Clear previous error messages
+        document.querySelectorAll('.error-message').forEach((msg) => {
+            msg.textContent = '';
+        });
+
+        // Get form field values
+        const userName = document.getElementById('User').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const topic = document.getElementById('topic').value;
+        const message = document.getElementById('message').value.trim();
+
+        let isValid = true;
+
+        // Validation checks
+        if (userName === '') {
+            document.getElementById('nameError').textContent = 'Name is required.';
+            isValid = false;
+        }
+
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        if (!topic) {
+            document.getElementById('topicError').textContent = 'Please select a topic.';
+            isValid = false;
+        }
+
+        if (message === '') {
+            document.getElementById('topicError').textContent = 'Message cannot be empty.';
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Create new entry element
+            const entry = document.createElement('div');
+            entry.className = 'entry-item';
+
+            entry.innerHTML = `
+                <div class="entry-profile">${userName.charAt(0).toUpperCase()}</div>
+                <div class="entry-text">
+                    <h3>${userName}</h3>
+                    <p><strong>Topic:</strong> ${topic}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p>${message}</p>
+                </div>
+            `;
+
+            // Append new entry to the list
+            entries.appendChild(entry);
+
+            // Reset the form
+            form.reset();
+        }
+    });
+});
+
+
+
 
 //Nav bar
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('active');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('guestBookForm');
+    const entries = document.getElementById('entries');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Clear previous errors
+        document.querySelectorAll('.error-message').forEach((msg) => {
+            msg.textContent = '';
+        });
+
+        // Form field values
+        const fullName = document.getElementById('fullName').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const topic = document.getElementById('topic').value;
+        const message = document.getElementById('message').value.trim();
+
+        let isValid = true;
+
+        // Validation checks
+        if (fullName === '') {
+            document.getElementById('nameError').textContent = 'Full Name is required.';
+            isValid = false;
+        }
+
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+            document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        if (!topic) {
+            document.getElementById('topicError').textContent = 'Please select a topic.';
+            isValid = false;
+        }
+
+        if (message === '') {
+            document.getElementById('messageError').textContent = 'Message cannot be empty.';
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Create entry
+            const entry = document.createElement('div');
+            entry.className = 'entry-item';
+
+            entry.innerHTML = `
+                <div class="entry-profile">${fullName.charAt(0).toUpperCase()}</div>
+                <div class="entry-text">
+                    <h3>${fullName}</h3>
+                    <p><strong>Topic:</strong> ${topic}</p>
+                    <p class="entry-email"><strong>Email:</strong> ${email}</p>
+                    <p>${message}</p>
+                </div>
+            `;
+
+            entries.appendChild(entry);
+
+            // Reset form
+            form.reset();
+        }
+    });
+});
+
+
 
 
 // เพิ่มแอนิเมชันให้ข้อความใน Hero Section
