@@ -18,14 +18,16 @@ html {
 /*Animation*/
 @keyframes flyIn {
     0% {
-      opacity: 0;
-      transform: translateX(-100%);
+        opacity: 0;
+        transform: translateX(-100%);
     }
+
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
+}
+
 /*Navigator bar*/
 .navbar {
     display: flex;
@@ -108,8 +110,8 @@ html {
     width: 80%;
 }
 
-.Group{
-    color:white;
+.Group {
+    color: white;
     font-family: "Athiti", serif;
     position: absolute;
     bottom: 88%;
@@ -117,15 +119,17 @@ html {
     font-size: 80px;
     display: flex;
 }
-.HEAD{
+
+.header.HEAD {
     display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: relative;
-        flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    flex-wrap: wrap;
 }
-.description{
-    color:white;
+
+.description {
+    color: white;
     font-family: "Athiti", serif;
     position: absolute;
     padding-left: 80%;
@@ -133,6 +137,7 @@ html {
     font-weight: 300;
     display: flex;
 }
+
 .large-block {
     display: flex;
     margin: 2rem;
@@ -140,78 +145,80 @@ html {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-large {
+}
+
+.image-large {
     width: 70%;
     height: 300px;
-    background-color: #ccc; /* สีเทาสำหรับแทนรูปภาพ */
-  }
-  
-  .text-large {
+    background-color: #ccc;
+    /* สีเทาสำหรับแทนรูปภาพ */
+}
+
+.text-large {
     width: 30%;
     padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-  }
-  
-  .small-block {
+}
+
+.small-block {
     display: flex;
     margin: 6rem 0rem;
     border-radius: 0px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image-small {
+}
+
+.image-small {
     width: 50%;
     height: 300px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
     display: block;
-    
-  }
 
-  .Img-index{
+}
+
+.Img-index {
     width: 673px;
     height: 378px;
- 
-  }
+
+}
 
 
-  .text-small {
+.text-small {
     width: 30%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .text-small p {
+}
+
+.text-small p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-  }
-  
-  .form{
+}
+
+.form {
     padding-top: 1%;
     padding-bottom: 2%;
     top: 101.5%;
     left: 20%;
     position: relative;
     width: 500px;
-  }
-  .form input{
+}
+
+.form input {
     width: 100%;
     height: 50px;
     padding: 0 20px;
     margin-bottom: 15px;
-  }
-  .form input[type="text"],
-  .form input[type="email"]
-  {
+}
+
+.form input[type="text"],
+.form input[type="email"] {
     border: none;
     outline: none;
     border-bottom: 2px solid rgb(58, 58, 58);
@@ -220,19 +227,21 @@ html {
     background: transparent;
     font-size: 16px;
     box-sizing: border-box;
-  }
-  .form input[type="text"]:focus,
-  .form input[type="email"]:focus{
-    border-bottom: 2px solid red;
-  }
+}
 
-  .form textarea{
+.form input[type="text"]:focus,
+.form input[type="email"]:focus {
+    border-bottom: 2px solid red;
+}
+
+.form textarea {
     width: 100%;
     height: 150px;
     padding: 15px 20px;
     margin-bottom: 10px;
-  }
-  .form textarea[name="comment"]{
+}
+
+.form textarea[name="comment"] {
     border: none;
     outline: none;
     border-bottom: 2px solid #585858;
@@ -241,12 +250,13 @@ html {
     background: transparent;
     font-size: 16px;
     box-sizing: border-box;
-  }
-  .form textarea[name="comment"]:focus{
-    border-bottom: 2px solid red;
-  }
+}
 
-  .form button{
+.form textarea[name="comment"]:focus {
+    border-bottom: 2px solid red;
+}
+
+.form button {
     padding: 10px 30px;
     background: #585858;
     font-size: 18px;
@@ -254,16 +264,19 @@ html {
     cursor: pointer;
     border: none;
     outline: none;
-  }
-  .form button:hover{
+}
+
+.form button:hover {
     background: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
-  }
-  .image-small img{
+}
+
+.image-small img {
     width: 160%;
     height: auto;
-  }
-  .text-small_index{
+}
+
+.text-small_index {
     position: relative;
     font-size: 54px;
     font-weight: 500;
@@ -272,20 +285,23 @@ html {
     left: 30%;
     bottom: -570px;
     padding-left: 1%;
-  }
-  .text-small_index .nick{
+}
+
+.text-small_index .nick {
     position: relative;
     font-size: 25px;
     font-weight: 300;
     bottom: -1%;
-  }
-  .text-small_index .ID{
+}
+
+.text-small_index .ID {
     position: relative;
     font-size: 25px;
     font-weight: 300;
     bottom: 0%;
-  }
-  .buttons_index {
+}
+
+.buttons_index {
     display: flex;
     margin-top: 20%;
     gap: 15px;
@@ -319,24 +335,25 @@ html {
 
 
 
-  /* Responsive Design */
-  @media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 768px) {
+
     .large-block,
-    .small-block  {
-      flex-direction: column;
+    .small-block {
+        flex-direction: column;
     }
-  
+
     .image-large,
     .image-small {
-      width: 100%;
-      height: 200px;
+        width: 100%;
+        height: 200px;
     }
-  
+
     .text-large,
     .text-small {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 /*Animation*/
 
@@ -344,63 +361,68 @@ html {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  
-  .fade-in.visible {
+}
+
+.fade-in.visible {
     opacity: 1;
     transform: translateY(0);
-  }
-  
+}
 
-  .image-large:hover, .image-small img:hover {
+
+.image-large:hover,
+.image-small img:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
     filter: brightness(1.2);
-  }
-  
+}
 
-  .buttons_index button:hover {
+
+.buttons_index button:hover {
     background-color: #b30000;
     transform: translateY(-5px) scale(1.05);
-  }
-  
-  /* Text Animations */
-  .text-large, .text-small {
+}
+
+/* Text Animations */
+.text-large,
+.text-small {
     animation: slideIn 1s ease-out forwards;
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     0% {
-      transform: translateX(-30%);
-      opacity: 0;
+        transform: translateX(-30%);
+        opacity: 0;
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
-  
-  /* Smooth Scrolling */
-  html {
+}
+
+/* Smooth Scrolling */
+html {
     scroll-behavior: smooth;
-  }
-  @keyframes flyIn {
+}
+
+@keyframes flyIn {
     0% {
-      opacity: 0;
-      transform: translateX(-100%);
+        opacity: 0;
+        transform: translateX(-100%);
     }
+
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
- 
-  
+}
 
 
 
-  
+
+
+
+
 
 
 
@@ -548,7 +570,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -565,7 +587,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
@@ -745,32 +767,37 @@ margin-left: auto;*/
     font-family: "Athiti", sans-serif;
 }
 
-.textparagraph2 .future{
+.textparagraph2 .future {
     font-size: 100px;
 }
 
-.textparagraph2 .goal{
+.textparagraph2 .goal {
     font-size: 30px;
     text-align: center;
 }
 
 
 .textparagraph2 .game {
-    
+
     width: auto;
     height: auto;
-    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
-    backdrop-filter: blur(10px); /* ทำให้เบลอ */
-    border-radius: 15px; /* มุมโค้งมน */
-    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    background: rgb(17, 17, 17);
+    /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px);
+    /* ทำให้เบลอ */
+    border-radius: 15px;
+    /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3);
+    /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* เงาสร้างมิติ */
     padding: 20px;
     font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
 
-.textparagraph2 .game:hover{
+.textparagraph2 .game:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -778,11 +805,16 @@ margin-left: auto;*/
 .textparagraph2 .garfield {
     width: auto;
     height: auto;
-    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
-    backdrop-filter: blur(10px); /* ทำให้เบลอ */
-    border-radius: 15px; /* มุมโค้งมน */
-    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    background: rgb(17, 17, 17);
+    /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px);
+    /* ทำให้เบลอ */
+    border-radius: 15px;
+    /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3);
+    /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* เงาสร้างมิติ */
     padding: 20px;
     font-size: large;
     padding-left: 10%;
@@ -792,11 +824,16 @@ margin-left: auto;*/
 .textparagraph2 .fluke {
     width: auto;
     height: auto;
-    background: rgb(17, 17, 17); /* พื้นหลังโปร่งแสง */
-    backdrop-filter: blur(10px); /* ทำให้เบลอ */
-    border-radius: 15px; /* มุมโค้งมน */
-    border: 1px solid rgba(5, 5, 5, 0.3); /* เส้นขอบ */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* เงาสร้างมิติ */
+    background: rgb(17, 17, 17);
+    /* พื้นหลังโปร่งแสง */
+    backdrop-filter: blur(10px);
+    /* ทำให้เบลอ */
+    border-radius: 15px;
+    /* มุมโค้งมน */
+    border: 1px solid rgba(5, 5, 5, 0.3);
+    /* เส้นขอบ */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* เงาสร้างมิติ */
     padding: 20px;
     padding-left: 20px;
     font-size: large;
@@ -827,7 +864,7 @@ margin-left: auto;*/
     border: 1px solid rgba(5, 5, 5, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    font-size: large ;
+    font-size: large;
     padding-left: 10%;
     margin-bottom: 5%;
 }
@@ -942,30 +979,35 @@ margin-left: auto;*/
     object-fit: cover;
     z-index: 1;
 }
-.inner_footer .form{
+
+.inner_footer .form {
     position: relative;
     display: fixed;
     color: white;
     top: -40px;
     z-index: 2;
 }
- .login-box{
+
+.login-box {
     width: 100%;
     height: 60px;
 }
-.input-box .input-field{
+
+.input-box .input-field {
     margin-top: 4%;
     width: 30%;
     height: 40px;
     z-index: 2;
 }
-.input-box .comment{
+
+.input-box .comment {
     margin-top: 1%;
     width: 30%;
     height: 90px;
 
 }
-.submit-btn{
+
+.submit-btn {
     margin-top: 1%;
     width: 30.5%;
     height: 40px;
@@ -974,21 +1016,26 @@ margin-left: auto;*/
     font-size: large;
     color: #ffffff;
 }
-.headform{
+
+.headform {
     position: absolute;
     color: white;
     width: 100%;
     top: 5%;
 }
-.submit-btn:hover{
+
+.submit-btn:hover {
     color: #050505;
     background-color: rgba(255, 0, 0, 0.521);
 }
 
 @keyframes wave {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }

@@ -81,23 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => observer.observe(el));
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.regtangle-index-text-container');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                section.style.animationPlayState = 'running';
-                observer.unobserve(entry.target); // Stop observing once animated
-            }
-        });
-    }, {
-        threshold: 0.5
-    });
-
-    observer.observe(section);
-});
-
 
 
 //Nav bar
@@ -219,8 +202,11 @@ function resetAutoSlide() {
 }
 
 // Add event listeners for Prev/Next buttons
-document.querySelector('.prev').addEventListener('click', () => changeSlide(-1));
-document.querySelector('.next').addEventListener('click', () => changeSlide(1));
+// ปุ่ม Prev และ Next
+document.querySelector('.prev').addEventListener('click', () => changeSlide(-1)); // ลดสไลด์
+document.querySelector('.next').addEventListener('click', () => changeSlide(1));  // เพิ่มสไลด์
+
+
 
 // Swipe support
 let startX = 0;
@@ -229,11 +215,10 @@ slides.addEventListener('touchstart', (e) => {
 });
 slides.addEventListener('touchend', (e) => {
     const endX = e.changedTouches[0].clientX;
-    if (startX - endX > 50) changeSlide(1); // Swipe left
-    if (endX - startX > 50) changeSlide(-1); // Swipe right
+    if (startX - endX > 50) changeSlide(1);  // Swipe ซ้ายเพื่อเลื่อนไปขวา (Next)
+    if (endX - startX > 50) changeSlide(-1); // Swipe ขวาเพื่อเลื่อนไปซ้าย (Prev)
     resetAutoSlide();
 });
-
 // Scroll listener to pause auto slide when scrolling
 window.addEventListener('scroll', () => {
     clearInterval(autoSlideInterval);
