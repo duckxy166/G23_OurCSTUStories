@@ -1180,3 +1180,20 @@ g
     height: auto;
     margin: 10px auto;
 }
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.wave-text {
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+}
