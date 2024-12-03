@@ -145,40 +145,15 @@ window.addEventListener('scroll', () => {
 
 // ฟังก์ชันที่ใช้ Fade ขึ้นหน้า journey
 document.addEventListener("DOMContentLoaded", () => {
-    const contentItems = document.querySelectorAll('.content-item');
+    const contentItems = document.querySelectorAll('.content-item, .content-item2');
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // 
-            } else {
-                entry.target.classList.remove('show'); //
-            }
+            entry.target.classList.toggle('show', entry.isIntersecting);
         });
-    }, {
-        threshold: 0.2 // 
-    });
+    }, { threshold: 0.2 });
 
     contentItems.forEach(item => observer.observe(item));
-});
-
-// ฟังก์ชันที่ใช้ Fade ขึ้นหน้า journey
-document.addEventListener("DOMContentLoaded", () => {
-    const contentItems2 = document.querySelectorAll('.content-item2');
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show'); // 
-            } else {
-                entry.target.classList.remove('show'); //
-            }
-        });
-    }, {
-        threshold: 0.2 // 
-    });
-
-    contentItems2.forEach(item2 => observer.observe(item2));
 });
 
 make-responsive
@@ -189,5 +164,25 @@ function toggleMenu() {
 
 
 //Future
-main
+let lastScrollY = window.scrollY; // Track last scroll position
+
+window.addEventListener("scroll", () => {
+    const currentScrollY = window.scrollY;
+    const container = document.querySelector(".regtangle1-text-container");
+
+    if (currentScrollY > lastScrollY) {
+        // Scroll down: hide the container
+        container.style.transform = "translateY(-100px)";
+        container.style.opacity = "0";
+        container.style.transition = "transform 0.5s ease-out, opacity 0.5s ease-out";
+    } else {
+        // Scroll up: show the container
+        container.style.transform = "translateY(0)";
+        container.style.opacity = "1";
+        container.style.transition = "transform 0.5s ease-out, opacity 0.5s ease-out";
+    }
+
+    lastScrollY = currentScrollY; // Update last scroll position
+});
+
 
