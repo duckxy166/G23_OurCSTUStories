@@ -181,11 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
     contentItems2.forEach(item2 => observer.observe(item2));
 });
 
-make-responsive
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  }
 
 
 //Future
