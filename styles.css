@@ -261,10 +261,13 @@ section {
 }
 
 .Comment form textarea[name="message"] {
+    position: relative;
+    resize: none;
     border: none;
     outline: none;
     border-bottom: 2px solid #585858;
-    height: 150px;
+    height: 100%;
+    width: 100%;
     color: #ffffff;
     background: transparent;
     font-size: 16px;
@@ -300,6 +303,7 @@ section {
 }
 
 .text-small_index {
+    position: relative;
     font-size: 42px;
     font-weight: 500;
     color: #ffffff;
@@ -390,6 +394,8 @@ section {
 }
 
 .Comment-show {
+    position: relative;
+    width: 500px;
     font-family: "Inter", sans-serif;
     padding: 20px;
     max-width: 800px;
@@ -408,6 +414,7 @@ section {
 
 .Comment-show .entry-list {
     position: relative;
+    resize: none;
     background-color: transparent;
     color: #ffffff;
     border-bottom: 2px solid red;
@@ -416,6 +423,7 @@ section {
 
     transition: all 0.3s ease-in-out;
 }
+
 @media (min-width: 769px) {
     
     .Comment-show{
