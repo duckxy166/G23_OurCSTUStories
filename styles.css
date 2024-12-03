@@ -390,7 +390,6 @@ section {
 }
 
 .Comment-show {
-    position: relative;
     font-family: "Inter", sans-serif;
     padding: 20px;
     max-width: 800px;
@@ -418,6 +417,10 @@ section {
     transition: all 0.3s ease-in-out;
 }
 @media (min-width: 769px) {
+    
+    .Comment-show{
+        position: relative;
+    }
         .text-small_index {
             font-size: 42px;
             position: relative;
@@ -433,6 +436,19 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .form{
+        width: 200px;
+    }
+    .beforeform{
+        font-size: 2rem;
+        max-width: 200px;
+    }
+    .beforeform_1 {
+        font-size: 1rem;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+
     .large-block,
     .small-block {
         flex-direction: column;
