@@ -390,7 +390,6 @@ section {
 .Comment-show {
     font-family: "Inter", sans-serif;
     padding: 20px;
-    max-width: 800px;
     left: 50%;
     top: -500px;
 }
@@ -398,7 +397,6 @@ section {
 
 
 .Comment-show .entry-list {
-    position: relative;
     resize: none;
     background-color: transparent;
     color: #ffffff;
@@ -415,10 +413,8 @@ section {
        
         font-family: "Inter", sans-serif;
         padding: 20px;
-        max-width: 800px;
         left: 50%;
         top: -500px;
-        position: relative;
     }
     .Comment-show h1 {
         font-size: 45px;
