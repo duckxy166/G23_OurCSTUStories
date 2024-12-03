@@ -261,10 +261,13 @@ section {
 }
 
 .Comment form textarea[name="message"] {
+    position: relative;
+    resize: none;
     border: none;
     outline: none;
     border-bottom: 2px solid #585858;
-    height: 150px;
+    height: 100%;
+    width: 100%;
     color: #ffffff;
     background: transparent;
     font-size: 16px;
@@ -392,6 +395,7 @@ section {
 
 .Comment-show {
     position: relative;
+    width: 500px;
     font-family: "Inter", sans-serif;
     padding: 20px;
     max-width: 800px;
@@ -410,6 +414,7 @@ section {
 
 .Comment-show .entry-list {
     position: relative;
+    resize: none;
     background-color: transparent;
     color: #ffffff;
     border-bottom: 2px solid red;
@@ -936,8 +941,6 @@ margin-left: auto;*/
 .textparagraph2 .future {
     position: relative;
     top: 120px;
-    font-size: 80px;
-    left: 55px;
     font-family: "Inter", sans-serif;
 }
 
@@ -1067,30 +1070,71 @@ margin-left: auto;*/
 /*-----------Tablet--------------------------*/
 
 
-/* Media Query for tablets (width <= 768px) */
-@media (max-width: 768px) {
-    .regtangle1-text-container {
+.regtangle2-text-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.photo2 {
+    flex-shrink: 0;
+    width: 600px;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.textparagraph3 {
+    font-size: 23px;
+    color: #333;
+    padding-top: 50px;
+    margin: 0;
+    white-space: pre-line;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+@media (max-width: 1024px) {
+
+    .regtangle1-text-container,
+    .regtangle2-text-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .photo1 {
+    .photo1,
+    .photo2 {
         width: 90%;
-        margin: 10px auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .textparagraph2 .future {
-        font-size: 50px;
-        top: 0;
-        left: 0;
+    .textparagraph2,
+    .textparagraph3 {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
     }
+}
+g
 
-    .textparagraph2 .goal {
-        font-size: 20px;
-        top: 0;
-        left: 0;
+@media (max-width: 768px) {
+
+
+
+    .photo1,
+    .photo2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .textparagraph2 {
@@ -1111,6 +1155,14 @@ margin-left: auto;*/
 
 /* Media Query for mobile phones (width <= 480px) */
 @media (max-width: 480px) {
+
+    .textparagraph2 .future {
+        position: relative;
+        top: 120px;
+        font-size: 50px;
+        font-family: "Inter", sans-serif;
+    }
+
     .photo1 {
         width: 100%;
         margin: 5px auto;
