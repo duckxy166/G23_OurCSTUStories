@@ -425,7 +425,7 @@ section {
 }
 
 
-/* Responsive Design */
+/* tablet Design */
 @media (max-width: 768px) {
     .large-block,
     .small-block {
@@ -885,7 +885,28 @@ margin-left: auto;*/
 
 
 /*------------------------------------- ตกแต่งหน้า Future ---------------------------------------------------*/
+.wave-text {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
 
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 /* photo1 + ข้อความ */
 .regtangle1-text-container {
     opacity: 0;
@@ -1046,7 +1067,8 @@ margin-left: auto;*/
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/*-----------Tablet------------------*/
+/*-----------Tablet--------------------------*/
+
 
 .regtangle2-text-container {
     display: flex;
