@@ -261,10 +261,12 @@ section {
 }
 
 .Comment form textarea[name="message"] {
+    position: relative;
     border: none;
     outline: none;
     border-bottom: 2px solid #585858;
-    height: 150px;
+    height: 100%;
+    width: 100%;
     color: #ffffff;
     background: transparent;
     font-size: 16px;
@@ -392,6 +394,7 @@ section {
 
 .Comment-show {
     position: relative;
+    width: 500px;
     font-family: "Inter", sans-serif;
     padding: 20px;
     max-width: 800px;
