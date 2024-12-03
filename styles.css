@@ -1016,6 +1016,8 @@ margin-left: auto;*/
 .textparagraph2 .future {
     position: relative;
     top: 120px;
+    font-size: 80px;
+    left: 55px;
     font-family: "Inter", sans-serif;
 }
 
@@ -1142,7 +1144,7 @@ margin-left: auto;*/
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/*-----------Tablet------------------*/
+/*---------------------------------------------------------------------------------------------------*/
 
 .regtangle2-text-container {
     display: flex;
@@ -1190,7 +1192,18 @@ margin-left: auto;*/
         margin-right: 0;
     }
 
-    .textparagraph2,
+    .textparagraph2{
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+.future{
+    display: none;
+}
+.goal{
+    display: none;
+}
     .textparagraph3 {
         font-size: 18px;
         margin-left: 20px;
@@ -1198,7 +1211,6 @@ margin-left: auto;*/
         margin-top: 20px;
     }
 }
-g
 
 @media (max-width: 768px) {
 
@@ -1208,61 +1220,6 @@ g
         margin-left: 0;
         margin-right: 0;
     }
-
-    .textparagraph2 {
-        font-size: 16px;
-        margin: 10px;
-    }
-
-    .textparagraph2 .game,
-    .textparagraph2 .garfield,
-    .textparagraph2 .fluke,
-    .textparagraph2 .can,
-    .textparagraph2 .june {
-        font-size: medium;
-        padding: 15px;
-        margin-bottom: 10px;
-    }
-}
-
-/* Media Query for mobile phones (width <= 480px) */
-@media (max-width: 480px) {
-
-
-    .textparagraph2 .future {
-        position: relative;
-        top: 120px;
-        font-size: 50px;
-        font-family: "Inter", sans-serif;
-    }
-
-    .photo1 {
-        width: 100%;
-        margin: 5px auto;
-    }
-
-    .textparagraph2 {
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    .textparagraph2 .future {
-        font-size: 40px;
-    }
-
-    .textparagraph2 .goal {
-        font-size: 18px;
-    }
-
-    .textparagraph2 .game,
-    .textparagraph2 .garfield,
-    .textparagraph2 .fluke,
-    .textparagraph2 .can,
-    .textparagraph2 .june {
-        font-size: small;
-        padding: 10px;
-    }
-    
 }
 
 /* Footer adjustments for smaller screens */
