@@ -303,7 +303,6 @@ section {
 }
 
 .text-small_index {
-    position: relative;
     font-size: 42px;
     font-weight: 500;
     color: #ffffff;
@@ -394,8 +393,6 @@ section {
 }
 
 .Comment-show {
-    position: relative;
-    width: 500px;
     font-family: "Inter", sans-serif;
     padding: 20px;
     max-width: 800px;
@@ -426,8 +423,14 @@ section {
 
 @media (min-width: 769px) {
     
-    .Comment-show{
-        position: relative;
+    .Comment-show {
+         position: relative; 
+         width: 500px; 
+        font-family: "Inter", sans-serif;
+        padding: 20px;
+        max-width: 800px;
+        left: 50%;
+        top: -500px;
     }
         .text-small_index {
             font-size: 42px;
@@ -470,6 +473,15 @@ section {
         }
         .Group{
             display: none;
+        }
+        .Comment-show {
+            /* position: relative; */
+            /* width: 500px; */
+            font-family: "Inter", sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            left: 50%;
+            top: -500px;
         }
 }
 
