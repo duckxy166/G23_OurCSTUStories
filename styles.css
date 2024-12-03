@@ -1097,25 +1097,11 @@ margin-left: auto;*/
         margin-top: 20px;
     }
 }
+g
 
-@media only screen and (min-width: 768px) {
-    .textparagraph2 .future {
-        position: relative;
-        top: 120px;
-        font-size: 80px;
-        left: 55px;
-        font-family: "Inter", sans-serif;
-    }
-
-}
 @media (max-width: 768px) {
 
-    .textparagraph2 .future {
-        position: relative;
-        top: 120px;
-        font-size: 50px;
-        font-family: "Inter", sans-serif;
-    }
+
 
     .photo1,
     .photo2 {
@@ -1142,6 +1128,14 @@ margin-left: auto;*/
 
 /* Media Query for mobile phones (width <= 480px) */
 @media (max-width: 480px) {
+
+    .textparagraph2 .future {
+        position: relative;
+        top: 120px;
+        font-size: 50px;
+        font-family: "Inter", sans-serif;
+    }
+
     .photo1 {
         width: 100%;
         margin: 5px auto;
