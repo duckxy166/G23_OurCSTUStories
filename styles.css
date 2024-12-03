@@ -1189,19 +1189,25 @@ g
 }
 
 
-@keyframes wave {
+.wave-text {
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+}
 
-    0%,
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
     100% {
         transform: translateY(0);
     }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-.wave-text {
-    display: inline-block;
-    animation: wave 1.5s ease-in-out infinite;
 }
