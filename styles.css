@@ -920,8 +920,6 @@ margin-left: auto;*/
 .textparagraph2 .future {
     position: relative;
     top: 120px;
-    font-size: 80px;
-    left: 55px;
     font-family: "Inter", sans-serif;
 }
 
@@ -1105,7 +1103,24 @@ margin-left: auto;*/
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .textparagraph2 .future {
+        position: relative;
+        top: 120px;
+        font-size: 80px;
+        left: 55px;
+        font-family: "Inter", sans-serif;
+    }
+
+}
 @media (max-width: 768px) {
+
+    .textparagraph2 .future {
+        position: relative;
+        top: 120px;
+        font-size: 50px;
+        font-family: "Inter", sans-serif;
+    }
 
     .photo1,
     .photo2 {
